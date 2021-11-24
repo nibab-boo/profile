@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montagu+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montagu+Slab&display=swap');
+
+body {
+  background-color: #f1faee;
+  font-size: 16px;
+  color: #2f3d55;
+  line-height: 1.4em;
+  font-family: 'Indie Flower', cursive;
+}
+
+.container {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.card {
+  text-align: center;
+  padding: 50px;
+  background-color: rgb(148, 132, 112);
+  border: transparent 2px solid;
+  margin: 4vh 0;
+  border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: 0 6px 2px rgba(99, 126, 129, 0.4);
+}
+
+.card:nth-child(even) {
+  border-radius: 40% -40%;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.depth {
+box-shadow: 0 0 4px rgba(71, 46, 46  , 0.05), 2px 2px 6px rgba(0,0,0,.1);
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* Music_Emoji */
+
+#music_emoji {
+  transition: animation .3s;
+  color: rgb(164, 204, 236);
+}
+
+#music_emoji:hover {
+  animation: shake 0.8s;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, -1px, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 2px, 2px);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, -4px, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, -4px, 0);
+  }
+}
+/* End Music_Emoji */
+
+/* Dog_Emoji */
+
+#dog_emoji {
+  color: black;
+  position: relative;
+}
+
+#dog_emoji:hover:before{
+  position: absolute;
+  right: 50%;
+  bottom: 100%;
+  padding: 5px;
+  width: 100px;
+  background-color: cadetblue;
+  border-radius: 50%;
+  content: "WOW WOW";
+}
+/* End Dog Emoji */
+
+.card p {
+  color: white;
+  padding: 20px;
+  width: 60%;
+  margin: 20px auto;
+}
+
+h1 {
+  color: rgba(0, 109, 119, 1);
+  font-family: 'Audiowide', cursive;
+}
+
+a {
+  color: #5e60ce;
+  text-decoration: none;
+  font-family: 'Montagu Slab', serif;
+}
+
+.button-blue {
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #6b6dda;
+}
+
+.button-blue:hover {
+  background-color: #4143c9;
+}
+
+.list_inline {
+  list-style: none;
+  padding: 0px;
+}
+
+.list_inline > li {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 24px;
+}
+
+.logo i {
+  transition: transform 0.8s; 
+}
+
+.logo i:hover {
+  transform: scale(1.8, 1.8) rotate(360deg);
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 80vw;
+  }
+  .header {
+    line-height: 1.1;
+  }
+ 
+  .button-blue {
+    margin-right: 60px;
+  }
+  
+  #music_emoji {
+    margin-top: 16px;
+    display: block;
+  }
+
+  #p {
+    display: relative;
+  }
+}
+
+@media (max-width: 960px) {
+
+}
+
+@media (max-width: 720px) {
+
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 80vw;
+  }
+  
+}
