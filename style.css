@@ -115,7 +115,7 @@ a {
 }
 
 .button-blue:hover {
-  background-color: #4143c9;
+  animation: shake 1s;
 }
 
 .list_inline {
@@ -177,3 +177,66 @@ a {
     font-size: 12px;
   }
 }
+
+.shutter {
+  background-color: rgb(148, 132, 112);
+  /* background-image: url("images/profile_img.jpg"); */
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  background-size: cover;
+  position: relative;
+  transition: all 0.8s;
+  overflow: hidden;
+}
+
+.shutter:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/pngegg.png");
+  background-size: cover;
+  transition: transform 0.6s;
+}
+
+.shutter:hover {
+  background: url("images/profile_img.jpg");
+  background-size: cover;
+  animation: flash;
+}
+
+.shutter:hover::before {
+  transform: scale(2, 2) rotate(90deg);
+}
+/* .sword_case {
+
+}
+
+.sword {
+  background-color: blue;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  padding: 4px;
+  border-top: 4px solid rgb(148, 132, 112);
+  border-bottom: 4px solid rgb(148, 132, 112);
+  border-right: 8px solid black;
+  margin: 10px;
+}
+
+.sword:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 100%;
+  padding: 6px 0;
+  top: -5px;
+  left: -10px;
+  border-radius: 30%;
+  background-color: yellow;
+} */
