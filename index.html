@@ -42,5 +42,12 @@
       </ul>
     </div>
     </div>
+    <script>
+      const sound = new Audio("./sound.mp3");
+      document.getElementById('music_emoji').addEventListener("click", (event)=> {
+        console.log(event.currentTarget)
+        sound.play();
+      });
+    </script>
   </body>
 </html>
